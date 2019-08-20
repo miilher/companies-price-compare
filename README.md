@@ -1,6 +1,6 @@
 # companies-price-compare
 
-Projeto em Angular, usando API https://financialmodelingprep.com para consulta de preço diario de algumas empresas (multi-select), com  plugins para gerar gráficos comparativos ('ng-chartist') e framework Materialize (ngx-materialize), Sass em formato scss.
+Projeto em Angular, usando API https://financialmodelingprep.com para consulta de preço diario de algumas empresas (multi-select), com  plugins para gerar gráficos comparativos (ng-chartist), framework Materialize (ngx-materialize), Sass em formato scss.
 
 Esse projeto foi gerado em [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
