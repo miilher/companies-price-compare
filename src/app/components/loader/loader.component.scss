@@ -1,0 +1,23 @@
+.onload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+
+    .preloader-wrapper{
+        z-index: 15;
+    }
+    .background-opacity{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: #000;
+        opacity: 0.35;
+    }
+}
