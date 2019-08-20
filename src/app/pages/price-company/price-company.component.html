@@ -1,0 +1,25 @@
+<app-loader *ngIf="loader === true"></app-loader>
+<div class="form">
+  <div class=" flex">
+    <form [formGroup]="userForm" novalidate>
+      <mz-select-container>
+        <select multiple mz-select 
+          id="codes-select" 
+          label="Selecione a partir de 2 empresas"
+          placeholder="Selecionar"
+          formControlName="codes">
+          <option *ngFor="let company of valuesCompany"  [ngValue]="company.value" class="left circle">
+            {{ company.title }}</option>
+        </select>
+        <span *ngIf="error !== null" class="invalid" [attr.data-error]="error">{{ error }}</span>
+      </mz-select-container>
+
+      <button class="btn waves-effect waves-light transparent" type="submit" name="action" (click)="searchButton()">
+        <i class="material-icons right">search</i>
+      </button>
+    </form>
+  </div>
+
+</div>
+<app-detail-company *ngIf="dataCompany !== null" [dataCompany]="dataCompany" [labels]="labels" [prices]="prices">
+</app-detail-company>
